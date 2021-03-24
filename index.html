@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Jesse's website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./jessephea.jpg" style="width:45%; image-resolution: 300dpi;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Jesse Phea</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px; image-resolution: 300dpi;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+  
+    </div>
+    </div>
+  </header>
+
+<!--Content of my previous work as a college student. -->
+<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+<p>
+  Throughout my career in college, I've completed multiple assignments that will display my current level as a developer.
+  The first thing you will notice is that this simple website containing information about myself is internet ready for computer
+  users to search and browse. 
+
+</p>
+<!--About me content--> 
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <h4><b>About Me</b></h4>
+    <div class="w3-col m6">
+      <img src="./jessephea.jpg" alt="Me" style="width:70%">
+    </div>
+  </div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <p>
+      When I was in highschool, I first learned about coding through a non-profit program called Operation Spark located in New Orleans. 
+      They were recruiting highschool students interested in learning how to code ,but I chose not to take the oportunity which I REGRET TODAY!
+      I found a love for coding when I gave it abother chance during my junior year in college. 
+      I was able to learn the basics of computer languages such as HTML, CSS, Javascript, Python, and SQL. With the skills I am gaining, I hope to fulfill my dream
+      to one day become a professional programmer!
+    </p>
+    <hr>
+  <!-- Contact Section -->
+  <!-- In this contact section, I took out the webform since I didnt see a need to include it. I wasnt sure how to use it so
+  I ended up taking it out. After that, I made the email and telephone text and images into hyper links for possible employers to hire me.-->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <a href="mailto:jphea1@lsu.edu"><p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p></a>
+        <p>Click here to email me:</p>
+        <a href="mailto:jphea1@lsu.edu" style="text-decoration: none;">jphea1@lsu.edu</a>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Baton Rouge, LA</p>
+        <br />
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <a href="tel:5049121254"><p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p></a>
+        <p>Call me at:</p><a href="tel:5049121254" style="text-decoration: none;"><p>(504) 912-1254</p></a>
+      </div>
+    </div>
+  </div>
+
+
+ 
+  
+   
+     
+
+    
+
+ 
+ 
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

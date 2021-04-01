@@ -12,10 +12,10 @@ turn = "hit"
 while card_values:
     #This will add the value of sum and a random number from the list containing the blackjack values 
     sum += random.choice(card_values)
+    print("You currently have " + str(sum))
     
     #declaring condition for when the player has a number less the 21
     if sum < 21:
-        print(sum)
         turn = input("What do you want to do? (hit or stop)")
     #setting condition if the number goes over 21 than print LOSER!
     elif sum > 21:
